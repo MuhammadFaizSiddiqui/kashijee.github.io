@@ -1,14 +1,13 @@
 // #################### RESPONSIVE NAVBAR #################### -->
 const mobile_nav = document.querySelector('.mobile-nav-btn');
-const header = document.querySelector('.header');
+const nav = document.querySelector('.nav');
 const toggleNabar = () => {
-    header.classList.toggle('mob-nav-active')
+    nav.classList.toggle('mob-nav-active')
 };
 
 mobile_nav.addEventListener('click', () => toggleNabar());
 
 // #################### STICKY NAVBAR #################### -->
-const nav = document.querySelector('.nav');
 const stickyNabar = () => {
     nav.classList.toggle('sticky', window.scrollY > 10)
 }
