@@ -23,6 +23,32 @@ html{
     font-size: 10px;
 }
 
+/* ############# ::SELECTION ############# */
+::selection {
+    background-color: var(--golden);
+    color: var(--darkgray);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+background: var(--darkgray);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(105, 105, 105);
+}
+
 /* ############# CHANGING PLACEHOLDER COLOR ############# */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgb(255, 255, 255);
@@ -74,11 +100,11 @@ html{
 
 /* ############# .INPUT-SEARCH-BAR ############# */
 .input-search-bar {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: #ffffff;
-    padding: 5px 2px; 
+    padding: 10px 5px; 
     outline: none;
-    font-family: 'PT Serif', serif;
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     background-color: transparent;
     border: none;
@@ -88,7 +114,7 @@ html{
 .search-close-btn{
     margin: 0 15px;
     color: #ffffff;
-    font-size: 2.2rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 /* ############# NAV ############# */
@@ -426,6 +452,84 @@ section.container{
 /* ############# .P-DARK ############# */
 .p-dark{
     color: var(--darkgray);
+}
+
+/* ############# SECTION.NEWSLETTER ############# */
+section.newsletter{
+    padding: 150px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+/* ############# SECTION.NEWSLETTER::BEFORE ############# */
+section.newsletter::before{
+    z-index: -1;
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('../images/newsletter.png');
+    filter: grayscale(100%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ############# SECTION.NEWSLETTER > .NEWSLETTER-HEADING ############# */
+section.newsletter .newsletter-heading{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: light;
+    font-size: 4.5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* ############# SECTION.NEWSLETTER > .NEWSLETTER-SLOGAN ############# */
+section.newsletter .newsletter-slogan{
+    font-family: 'PT Serif';
+    text-align: center;
+    font-weight: light;
+    font-size: 1.7rem;
+    text-transform: lowercase;
+    margin: 10px 0 35px;
+    letter-spacing: 1px;
+}
+
+/* ############# SECTION.NEWSLETTER > .NEWSLETTER-FORM ############# */
+section.newsletter .newsletter-form {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 30px 0;
+    justify-content: center;
+}
+
+/* ############# SECTION.NEWSLETTER > .NEWSLETTER-FORM > .NEWSLETTER-INPUT ############# */
+section.newsletter .newsletter-form .newsletter-input {
+    font-size: 1.4rem;
+    color: #ffffff;
+    padding: 10px 5px; 
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* ############# SECTION.NEWSLETTER > .NEWSLETTER-FORM > .NEWSLETTER-SEND-BTN ############# */
+section.newsletter .newsletter-form .newsletter-send-btn{
+    margin: 0 15px;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 /* ############# FOOTER ############# */

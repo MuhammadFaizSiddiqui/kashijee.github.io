@@ -1,0 +1,14 @@
+@media(max-width:660px){
+    /* ############# SECTION.NEWSLETTER > .NEWSLETTER-HEADING ############# */
+    section.newsletter .newsletter-heading{
+        font-size: 3.7rem;
+    }
+    /* ############# SECTION.NEWSLETTER > .NEWSLETTER-FORM ############# */
+    section.newsletter .newsletter-form {
+        display: flex;
+        align-items: center;
+        width: 85%;
+        margin: 30px 0;
+        justify-content: center;
+    }
+}
