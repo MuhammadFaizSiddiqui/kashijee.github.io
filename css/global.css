@@ -8,7 +8,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* background-color: blue; */
     box-sizing: border-box;
 }
 
@@ -130,6 +129,8 @@ nav ul.nav-search-cart-icons li a i{
 
 /* ############# NAV > .LOGO ############# */
 nav .logo{
+    text-align: center;
+    user-select: none;
     padding: 14px 18px;
     transition: all .2s ease-in-out;
     font-family: 'David Libre', serif;
@@ -176,7 +177,7 @@ nav .logo{
 nav.sticky{
     padding: 0px 30px;
     background-color: rgba(20, 20, 20, .99);
-    box-shadow: 0 1px 0 var(--golden);
+    border-bottom: 3px solid var(--golden);
 }
 
 /* ############# (WHEN) NAV.STICKY | (DO CHANGES IN) .LOGO ############# */
@@ -185,6 +186,8 @@ nav.sticky .logo{
     transition: all .3s ease-in-out;
     color: var(--golden);
     padding: 8px;
+    background-color: var(--darkgray);
+    border-radius: 0;
 }
 
 /* ############# (WHEN) NAV.STICKY | (DO CHANGES IN) .NAV-FONT-STYLE ############# */

@@ -1,0 +1,87 @@
+/* ############# HEADER > NAV > .NAV-SHOP-FONT-COLOR ############# */
+header nav .nav-shop-font-color{
+    color: #ffffff;
+}
+
+/* ############# HEADER > NAV > .NAV-SHOP-FONT-COLOR.ACTIVE ############# */
+header nav .nav-shop-font-color.active{
+    color: var(--golden);
+    border-color: var(--golden);
+}
+
+/* ############# HEADER > NAV > .SHOP-LOGO-COLOR ############# */
+header nav .shop-logo-color{
+    text-align: center;
+    width: 170px;
+    color: var(--darkgray);
+    background-color: var(--golden);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+/* ############# HEADER > .COLLECTIONS ############# */
+header .collections{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+/* ############# HEADER > .COLLECTIONS > COLLECTION ############# */
+header .collections .collection{
+    transition: all .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    height: 580px;
+    flex: 1 1 430px;
+    background-color: var(--golden);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: light;
+    font-size: 4.2rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+/* ############# HEADER > .COLLECTIONS > .COLLECTION.MEN-COLLECTION:HOVER ############# */
+header .collections .collection.men-collection:hover{
+    transition: all .2s ease-in-out;
+    transform:rotate(-3deg) scale(0.8);
+    cursor: pointer;
+}
+
+/* ############# HEADER > .COLLECTIONS > .COLLECTION.BELTS-COLLECTION:HOVER ############# */
+header .collections .collection.belts-collection:hover{
+    transition: all .2s ease-in-out;
+    transform:rotate(3deg) scale(0.8);
+    cursor: pointer;
+}
+/* ############# HEADER > .COLLECTIONS > COLLECTION.MEN-COLLECTION ############# */
+header .collections .collection.men-collection{
+    border-bottom: 4px solid transparent;
+    border-right: 2px solid var(--golden);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.9) 100%), url('../images/shop-men-collection.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ############# HEADER > .COLLECTIONS > COLLECTION.BELTS-COLLECTION ############# */
+header .collections .collection.belts-collection{
+    border-left: 2px solid var(--golden);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.9) 100%), url('../images/shop-belts-collection.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ############# HEADER > .COLLECTIONS > COLLECTION > SPAN ############# */
+header .collections .collection span{
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 0 20px;
+    letter-spacing: 3px;
+}
