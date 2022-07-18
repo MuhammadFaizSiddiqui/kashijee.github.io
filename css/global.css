@@ -2,6 +2,7 @@
 :root {
     --golden: #FD9A01;
     --darkgray: #141414;
+    --light: #eee;
   }
 
 /* ############# RESETING DEFAULT MARGIN AND PADDING ############# */
@@ -117,6 +118,23 @@ background: rgb(105, 105, 105);
     font-size: 2rem;
     cursor: pointer;
 }
+
+/* ############# HEADER > NAV > .NAV-SHOP-FONT-COLOR ############# */
+header nav .nav-shop-font-color{
+    color: #ffffff;
+}
+
+/* ############# HEADER > NAV > .NAV-SHOP-FONT-COLOR.ACTIVE ############# */
+header nav .nav-shop-font-color.active{
+    color: var(--golden);
+    border-color: var(--golden);
+}
+
+/* ############# HEADER > NAV > .PRODUCT-DETAILS-LOGO-COLOR ############# */
+header nav .product-details-logo-color{
+    color: var(--golden);
+}
+
 /* ############# NAV ############# */
 nav{
     padding: 0px 50px;
@@ -300,6 +318,14 @@ section.container{
     /* font-weight: lighter; */
     font-size: 4.4rem;
     color: var(--darkgray);
+}
+
+/* ############# .light-HEADING ############# */
+.light-heading{
+    text-transform: capitalize;
+    font-family: 'PT Serif';
+    font-size: 4.4rem;
+    color: #eee;
 }
 
 /* ############# .PRODUCTS ############# */
