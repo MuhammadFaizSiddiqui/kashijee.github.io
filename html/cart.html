@@ -12,18 +12,18 @@
     <!-- #################### LINKING NAV-RESPONSIVE CSS #################### -->
     <link rel="stylesheet" href="../css/responsive-css/nav-responsive.css">
     <!-- #################### LINKING PRODUCT-DETAILS-STYLE CSS #################### -->
-    <link rel="stylesheet" href="../css/product-details-style.css">
+    <link rel="stylesheet" href="../css/cart-style.css">
     <!-- #################### LINKING PRODUCT-DETAILS-RESPONSIVE CSS #################### -->
-    <link rel="stylesheet" href="../css/responsive-css/product-details-responsive.css"> 
+    <link rel="stylesheet" href="../css/responsive-css/cart-responsive.css"> 
     <!-- #################### FONT AWESOME CDN #################### -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- #################### AOS ON SCROLL CDN #################### -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Product Details - KashiJee</title>
 </head>
-<body>
+<body class="dark-gray-linear">
     <!-- #################### SEARCH-OUTSIDE-BAR #################### -->
-    <div class="search-outside-container">
+    <div class="search-outside-container ">
         <!-- #################### SEARCH-BAR #################### -->
         <div class="search-bar">
             <form action="" id="search-form" autocomplete="off">
@@ -48,7 +48,7 @@
                 <li><a class="nav-font-style nav-shop-font-color" href="/html/collections.html">Contact</a></li>
             </ul>
             <!-- #################### LOGO #################### -->
-            <h1 class="logo">KJ</h1>
+            <h1 class="logo cart-logo-color">KJ</h1>
             <!-- #################### SECONDARY-NAVIGATION #################### -->
             <ul class="nav-search-cart-icons">
                 <li><a class="nav-font-style nav-shop-font-color" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -57,65 +57,86 @@
         </nav>
     </header>
 
-    <!-- #################### PRODUCT-PRIMARY-DETAILS #################### -->
-    <section class="container shop-product">
-        <div class="product-primary-details">
-            <div>
-                <div class="product-images" data-aos="fade-right" data-aos-duration="500">
-                    <div class="primary-product-image">
-                        <img src="../images/shop-men-collection.jpg" alt="">
-                        <div class="other-images"  data-aos="fade-right" data-aos-duration="500">
-                            <div class="other-image secondary-product-image">
-                                <img src="../images/shop-men-collection.jpg" alt="">
-        
-                            </div>
-                            <div class="other-image third-product-image">
-                                <img src="../images/home-about-background.jpg" alt="">
-        
-                            </div>
-                            <div class="other-image fourth-product-image">
-                                <img src="../images/home-header-background.jpg" alt="">
-        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-details">
-                <h1 class="product-name" data-aos="fade-zoom-in" data-aos-offset="40">Select by Daraz Basic Jersey Trouser For Men - BlackSelect by Daraz Basic Jersey Trouser For Men - Black </h1>
-                <div class="product-size nav-font-style" data-aos="fade-zoom-in" data-aos-offset="40">
-                    <p class="size-text">Size:</p> 
-                    <div class="size-container">XS</div>
-                    <div class="size-container">S</div>
-                    <div class="size-container">M</div>
-                    <div class="size-container">L</div>
-                    <div class="size-container">XL</div>
-                </div>
-                <a href="/" class="product-size-chart"  data-aos="fade-zoom-in" data-aos-offset="40">View size chart</a> 
-                <div class="product-price" data-aos="fade-zoom-in" data-aos-offset="40">PKR 89.00</div>
-                <div class="product-quantity nav-font-style" data-aos="fade-zoom-in" data-aos-offset="40"><p class="quantity-text">Quantity:</p>
+    <!-- #################### CART #################### -->
+    <section class="container cart">
+        <ul>
+            <li data-aos="flip-left" data-aos-offset="40">
+                <div class="cart-product-image"><div class="cart-image-container"><img src="../images/shop-men-collection.jpg" alt=""></div></div>
+
+                <div class="cart-product-name">Blue & White Classic Design T-shirt</div>
+
+                <div class="product-quantity">
                     <div class="quantity-options">
                         <div class="decrease-quantity quantity-option"><i class="fa-solid fa-minus"></i></div> 
                         <div class="current-quantities quantity-option">1</div>
                         <div class="increase-quantity quantity-option"><i class="fa-solid fa-plus"></i></div>
                     </div>
                 </div>
-                <div class="shop-buttons" >
-                    <a class="primary-button buy-now-btn" href="" data-aos="fade-zoom-in" data-aos-offset="40">Buy Now</a>
-                    <a class="secondary-button add-to-cart-btn" href="" data-aos="fade-zoom-in" data-aos-offset="40">Add To Cart</a>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="more-products"></div> -->
-    </section>
 
-    <section class="container description" data-aos="fade-zoom-in" data-aos-offset="40">
-        <h2 class="details nav-font-style" data-aos="fade-up" data-aos-offset="40">More about product: </h2>
-        <p class="description nav-font-style" data-aos="fade-right" data-aos-offset="40">Lorem Ipsum Shop Lorem Ipsum Shop Lorem Ipsum at Shop Lorem in Ipsum Shop is Lorem  Ipsum Shop the</h2>
+                <div class="cart-product-price">PKR 550.0</div>
+
+                <div class="cart-product-delete"><i class="fa-solid fa-trash-can"></i></div>
+            </li>
+            <li data-aos="flip-left" data-aos-offset="40">
+                <div class="cart-product-image"><div class="cart-image-container"><img src="../images/shop-men-collection.jpg" alt=""></div></div>
+
+                <div class="cart-product-name">Blue & White Classic Design T-shirt</div>
+
+                <div class="product-quantity">
+                    <div class="quantity-options">
+                        <div class="decrease-quantity quantity-option"><i class="fa-solid fa-minus"></i></div> 
+                        <div class="current-quantities quantity-option">1</div>
+                        <div class="increase-quantity quantity-option"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="cart-product-price">PKR 550.0</div>
+
+                <div class="cart-product-delete"><i class="fa-solid fa-trash-can"></i></div>
+            </li>
+            <li data-aos="flip-left" data-aos-offset="40">
+                <div class="cart-product-image"><div class="cart-image-container"><img src="../images/shop-men-collection.jpg" alt=""></div></div>
+
+                <div class="cart-product-name">Blue & White Classic Design T-shirt</div>
+
+                <div class="product-quantity">
+                    <div class="quantity-options">
+                        <div class="decrease-quantity quantity-option"><i class="fa-solid fa-minus"></i></div> 
+                        <div class="current-quantities quantity-option">1</div>
+                        <div class="increase-quantity quantity-option"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="cart-product-price">PKR 550.0</div>
+
+                <div class="cart-product-delete"><i class="fa-solid fa-trash-can"></i></div>
+            </li>
+            <li data-aos="flip-left" data-aos-offset="40">
+                <div class="cart-product-image"><div class="cart-image-container"><img src="../images/shop-men-collection.jpg" alt=""></div></div>
+
+                <div class="cart-product-name">Blue & White Classic Design T-shirt</div>
+
+                <div class="product-quantity">
+                    <div class="quantity-options">
+                        <div class="decrease-quantity quantity-option"><i class="fa-solid fa-minus"></i></div> 
+                        <div class="current-quantities quantity-option">1</div>
+                        <div class="increase-quantity quantity-option"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="cart-product-price">PKR 550.0</div>
+
+                <div class="cart-product-delete"><i class="fa-solid fa-trash-can"></i></div>
+            </li>
+            <div class="cart-buttons" >
+                <a class="secondary-button clear-cart-btn" href="" data-aos="fade-zoom-in" data-aos-offset="40">Clear Cart</a>
+                <a class="primary-button checkout-btn" href="" data-aos="fade-zoom-in" data-aos-offset="40">Checkout</a>
+            </div>
+        </ul>
     </section>
 
     <!-- #################### YOU-MAY-ALSO-LIKE #################### -->
-    <section class="container products-container dark-gray-linear  you-may-also-like">
+    <section class="container products-container you-may-also-like">
         <h1 class="light-heading" data-aos="fade-right"  data-aos-duration="500">You May ALso Like</h1>
         <div class="products">
             <div class="product product-dark" data-aos="zoom-in"  data-aos-duration="500">
@@ -182,6 +203,7 @@
             <i class="fa-solid fa-paper-plane icon-white newsletter-send-btn"></i>
         </form>
     </section>
+
     <!-- #################### FOOTER #################### -->
     <footer>
         <div class="footer-icons" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-offset="140">

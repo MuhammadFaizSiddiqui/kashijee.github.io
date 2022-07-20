@@ -1,6 +1,5 @@
 @media(max-width: 895px){
 
-
     /* ############# SECTION.CONTAINER > .PRODUCT-PRIMARY-DETAILS > PRODUCT-IMAGES ############# */
     section.container .product-primary-details .product-images{
         width: 330px;
@@ -19,12 +18,6 @@
     section.container .product-primary-details .product-details{
         margin-left: 30px;
     }
-    /* ############# SECTION.CONTAINER > .PRODUCT-PRIMARY-DETAILS ############# */
-    section.container{
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
 }
 
 @media (max-width: 776px){

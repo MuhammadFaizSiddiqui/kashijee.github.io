@@ -170,6 +170,9 @@ section.container .product-primary-details .product-details .product-quantity .q
     background-color: var(--darkgray);
     font-size: 1.4rem;
     color: var(--golden);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ############# SECTION.CONTAINER > .PRODUCT-PRIMARY-DETAILS > PRODUCT-DETAILS > .PRODUCT-QUANTITY > QUANTITY-OPTIONS > DECREASE-QUANTITY ############# */
@@ -223,10 +226,4 @@ section.container.description .description{
     font-size: 1.5rem;
     font-weight: 400;
     text-transform: capitalize;
-}
- 
-/* ############# SECTION.CONTAINER.YOU-MAY-ALSO-LIKE > H1 ############# */
-section.container.you-may-also-like
-h1{
-    text-align: center;
 }

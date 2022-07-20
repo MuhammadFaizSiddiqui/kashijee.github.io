@@ -479,6 +479,12 @@ section.container{
 .p-dark{
     color: var(--darkgray);
 }
+ 
+/* ############# SECTION.CONTAINER.YOU-MAY-ALSO-LIKE > H1 ############# */
+section.container.you-may-also-like
+h1{
+    text-align: center;
+}
 
 /* ############# SECTION.NEWSLETTER ############# */
 section.newsletter{

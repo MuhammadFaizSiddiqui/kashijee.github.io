@@ -36,6 +36,11 @@ header .collections .collection{
     background-size: cover; background-position: center center; background-repeat: no-repeat;
 }
 
+/* ############# HEADER > .COLLECTIONS > COLLECTION ############# */
+header .collections .collection:nth-child(odd){
+    border-right: 2px solid var(--golden);
+    border-left: none;
+}
 /* ############# HEADER > .COLLECTIONS > .COLLECTION.MEN-COLLECTION:HOVER ############# */
 header .collections .collection:hover{
     transition: all .2s ease-in-out;
