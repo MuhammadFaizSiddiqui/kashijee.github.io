@@ -3,12 +3,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- #################### LINKING FONTS CSS #################### -->
+    <link rel="stylesheet" href="../css/fonts.css">
+    <!-- #################### LINKING PRELOADER CSS #################### -->
+    <link rel="stylesheet" href="../css/preloader.css">
     <!-- #################### LINKING GLOBAL CSS #################### -->
     <link rel="stylesheet" href="../css/global.css">
     <!-- #################### LINKING GLOBAL CSS #################### -->
     <link rel="stylesheet" href="../css/responsive-css/global-responsive.css">
-    <!-- #################### LINKING FONTS CSS #################### -->
-    <link rel="stylesheet" href="../css/fonts.css">
     <!-- #################### LINKING NAV-RESPONSIVE CSS #################### -->
     <link rel="stylesheet" href="../css/responsive-css/nav-responsive.css">
     <!-- #################### LINKING PRODUCT-DETAILS-STYLE CSS #################### -->
@@ -21,7 +23,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Product Details - KashiJee</title>
 </head>
-<body class="dark-gray-linear">
+<body>
+    <!-- #################### PRELOADER #################### -->
+    <div class="preloader">
+        <div class="preloader-text"> KJ
+        </div>
+    </div>
     <!-- #################### SEARCH-OUTSIDE-BAR #################### -->
     <div class="search-outside-container ">
         <!-- #################### SEARCH-BAR #################### -->
@@ -60,6 +67,8 @@
     <!-- #################### CART #################### -->
     <section class="container cart">
         <ul>
+            <h1 class="golden-heading">Cart</h1>
+            
             <li data-aos="flip-left" data-aos-offset="40">
                 <div class="cart-product-image"><div class="cart-image-container"><img src="../images/shop-men-collection.jpg" alt=""></div></div>
 
@@ -128,6 +137,11 @@
 
                 <div class="cart-product-delete"><i class="fa-solid fa-trash-can"></i></div>
             </li>
+            <div class="total" data-aos="flip-left" data-aos-offset="40">
+                <h1 class="golden-heading">Total Items: 4</h1>
+                <h1 class="golden-heading">Total Quantities: 12</h1>
+                <h1 class="golden-heading">Total Price: 200.00 PKR</h1>
+            </div>
             <div class="cart-buttons" >
                 <a class="secondary-button clear-cart-btn" href="" data-aos="fade-zoom-in" data-aos-offset="40">Clear Cart</a>
                 <a class="primary-button checkout-btn" href="" data-aos="fade-zoom-in" data-aos-offset="40">Checkout</a>
@@ -229,5 +243,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- #################### INCLUDING AOS #################### -->
     <script src="../js/including_aos.js"></script>
+    <!-- #################### PRELOADER JS #################### -->
+    <script src="../js/preloader.js"></script>
 </body>
 </html>

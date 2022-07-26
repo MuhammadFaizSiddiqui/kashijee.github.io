@@ -169,10 +169,12 @@ nav ul.nav-search-cart-icons{
 /* ############# NAV > UL.NAV-SEARCH-CART-ICONS > LI > A > I ############# */
 nav ul.nav-search-cart-icons li a i{
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 /* ############# NAV > .LOGO ############# */
 nav .logo{
+    cursor: pointer;
     text-align: center;
     user-select: none;
     padding: 14px 18px;
@@ -182,6 +184,11 @@ nav .logo{
     font-size: 5.5rem;
     letter-spacing: 5px;
     color: var(--darkgray);
+}
+
+/* ############# NAV > H1.LOGO.CART-LOGO-COLOR ############# */
+h1.cart-logo-color{
+    color: #ffffff;
 }
 
 /* ############# .NAV-FONT-STYLE ############# */
@@ -259,10 +266,12 @@ nav.sticky .active{
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 /* ############# .SECONDARY-BUTTON ############# */
 .secondary-button{
+    cursor: pointer;
     letter-spacing: 1px;
     padding: 9px 28px;
     margin: 10px 10px;

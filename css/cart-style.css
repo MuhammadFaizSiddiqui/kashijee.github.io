@@ -5,7 +5,7 @@ h1.cart-logo-color{
 
 /* ############# SECTION.CONTAINER.CART > .CART-TABLE ############# */
 section.container.cart{
-    padding: 130px 0 0 0;
+    padding: 120px 0 0 0;
     display: flex;
     width: 100%;
     align-items: center;
@@ -19,6 +19,13 @@ section.container.cart ul{
     margin: 0;
     padding: 0;
 }
+
+/* ############# SECTION.CONTAINER.CART > .CART-TABLE ############# */
+section.container.cart ul h1{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
 
 /* ############# SECTION.CONTAINER > .CART > LI ############# */
 section.container.cart li{
@@ -125,7 +132,24 @@ section.container.cart li div.cart-product-delete{
 /* ############# SECTION.CONTAINER > .CART > LI > DIV > DIV.CART-PRODUCT-PRICE ############# */
 section.container.cart li div.cart-product-price{
     padding: 2px;
+}
 
+/* ############# SECTION.CONTAINER > .CART > LI > DIV > DIV.CART-PRODUCT-PRICE ############# */
+section.container.cart .total{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: var(--darkgray);
+}
+
+/* ############# SECTION.CONTAINER > .CART > LI > DIV > DIV.CART-PRODUCT-PRICE ############# */
+section.container.cart .total h1{
+    background-color: var(--darkgray);
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    padding: 0;
+    font-weight: 600;
+    margin: 0 5px;
 }
 
 /* ############# SECTION.CONTAINER > .PRODUCT-PRIMARY-DETAILS > PRODUCT-DETAILS > .CART-BUTTONS ############# */
